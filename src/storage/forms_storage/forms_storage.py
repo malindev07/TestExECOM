@@ -1,5 +1,7 @@
 from dataclasses import dataclass, field
 
+from src.forms.form_create.form_create import FormTypes
+
 
 @dataclass
 class FormStorage:
@@ -13,3 +15,7 @@ class FormStorage:
 
             self.forms[key] = data[key]
             return True
+
+
+# a = FormStorage()
+# a.save_form()

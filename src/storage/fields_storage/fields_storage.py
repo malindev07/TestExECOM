@@ -1,5 +1,7 @@
 from dataclasses import dataclass, field
 
+from src.forms.form_create.form_create import Form
+
 
 @dataclass
 class FieldsStorage:
@@ -34,9 +36,9 @@ class FieldsStorage:
 #         "user_text": "text",
 #     }
 # }
-
+#
 # print(test_field_storage.fields)
-# test_field_storage.check_field(form=new_form)
+# test_field_storage.check_fields(form=new_form)
 # print(test_field_storage.fields)
 # test_form2 = {
 #     "SECOND_FORM_NAME": {
@@ -47,7 +49,7 @@ class FieldsStorage:
 # print("First add")
 # print(test_field_storage.fields)
 #
-# test_field_storage.check_field(form=test_form2)
+# test_field_storage.check_fields(form=test_form2)
 #
 # print("SECOND add")
 # print(test_field_storage.fields)
@@ -57,7 +59,7 @@ class FieldsStorage:
 #     "THIRD_FORM_NAME": {"user_email": "email", "user_phone": "phone", "user_age": "age"}
 # }
 #
-# test_field_storage.check_field(form=test_form3)
+# test_field_storage.check_fields(form=test_form3)
 #
 # print("THIRD add")
 # print(test_field_storage.fields)

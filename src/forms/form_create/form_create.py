@@ -31,7 +31,7 @@ class Form:
                         self.form_fields[key] = FormTypes.DATE.value
                     case FormTypes.TEXT:
                         self.form_fields[key] = FormTypes.TEXT.value
-
+            # print({self.form_name: self.form_fields})
             return {self.form_name: self.form_fields}
 
         except ValueError:
